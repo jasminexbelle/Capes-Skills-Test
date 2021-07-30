@@ -1,0 +1,154 @@
+
+:root {
+  --radius: 0.5rem;
+  --padding: 1rem;
+  --background:rgb(253,246,240);
+  --text:rgb(55, 71, 79);
+  --pink1:rgb(233,133,128);
+  --pink2:rgb(255,108,108);
+  --inputfocus: rgb(244, 143, 177);
+  --hoverinput:rgb(252, 228, 236);
+  
+}
+
+.dark-theme{
+  --background: rgb(21, 16, 54);
+  --text:rgb(253,246,240);
+  --pink1: rgb(255, 108, 108);
+  --pink2:rgb(233,133,128);
+  --inputfocus: rgb(255, 249, 251);
+  --hoverinput:rgb(252, 228, 236);
+}
+
+#icon{
+  width: 30px;
+  cursor: pointer;
+  float:left;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+p {
+  float:left;
+  font-size: 0.8rem;
+  color:var(--text);
+}
+
+body {
+  font: "Lucida Grande";
+}
+
+.form {
+  background:var(--background);
+  width: 20rem;
+  height: 33rem;
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: 6rem auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--pink1);
+}
+
+.description {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.group i {
+	visibility: hidden;
+	position: absolute;
+}
+  
+.group.success i.fa-check {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.group.error i.fa-times {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.group small {
+	color:var(--pink1);
+	position: relative;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+  text-align: center;
+}
+
+.group.error small {
+	visibility: visible;
+}
+
+.form-label {
+  float: left;
+  color: var(--text);
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-align:left;
+  padding:0;
+}
+
+.form-input {
+  margin-bottom: 1rem;
+  border: none;
+  background-color: rgb(211, 214, 216);
+  border-radius: var(--radius);
+  width: 17rem;
+  opacity: 65%;
+  padding: var(--padding);
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  visibility: visible;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transition: 250ms all ease-in;
+}
+
+.form-input:hover {
+  border: 1px solid var( --hoverinput);
+  box-shadow: 0 0 5px var( --hoverinput);
+  background: white;
+}
+
+.form-input:focus {
+  border: 1px solid var( --inputfocus);
+  box-shadow: 0 0 5px var( --hoverinput);
+  background: white;
+}
+
+
+.form-input::placeholder {
+  color: rgb(120, 144, 156);
+}
+
+.btn-primary {
+  text-align: center;
+  border: none;
+  background: var(--pink1);
+  color: white;
+  border-radius: 5rem;
+  padding: var(--padding);
+  margin-top: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 20rem;
+  cursor: pointer;
+  transition: 250ms all ease-in;
+}
+
+.btn-primary:hover {
+  background-color: var(--pink2);
+}
+
